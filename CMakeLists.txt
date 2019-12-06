@@ -29,23 +29,13 @@ find_package(GTest CONFIG REQUIRED)
 
 
 add_library(${PROJECT_NAME} STATIC
-        # enum your files and delete this comment
         ${CMAKE_CURRENT_SOURCE_DIR}/sources/SharedPtr.cpp
-        #   SharedPtr.h
-        #   ${CMAKE_CURRENT_SOURCE_DIR}/sources/source.cpp
         )
 add_executable(tests
-        # TODO: enum your files and delete this comment
         ${CMAKE_CURRENT_SOURCE_DIR}/tests/test.cpp
 
         ${CMAKE_CURRENT_SOURCE_DIR}/sources/SharedPtr.cpp
         )
-
-#find_library(#
-#    GTEST_LOCAL_LIB_MAIN
-#    NAMES gtest_main
-#    PATHS ${GTEST_ROOT}/lib
-#)
 
 target_include_directories(sharedPtr
         PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
@@ -60,8 +50,6 @@ target_include_directories(tests
 target_link_libraries(tests
         pthread
         ${PROJECT_NAME}
-        #            ${GTEST_LOCAL_LIB}
-        #            ${GTEST_LOCAL_LIB_MAIN}
         GTest::gtest
         GTest::main
         )
