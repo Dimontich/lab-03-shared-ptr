@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/include/SharedPtr.h
+atomic
+-
+cstdio
+-
+
+/home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/sources/SharedPtr.cpp
+../include/SharedPtr.h
+/home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/include/SharedPtr.h
+
