@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/CERZAR/lab-01-parser.svg?branch=master)](https://travis-ci.org/CERZAR/lab-01-parser)
 # Лабораторная работа №3
 
 ### Задание
