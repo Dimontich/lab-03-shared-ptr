@@ -1,3 +1,4 @@
+// Copyright 2019 CERZAR
 /* This source file must have a .cpp extension so that all C++ compilers
    recognize the extension without flags.  Borland does not know .cxx for
    example.  */
@@ -568,9 +569,10 @@ char const info_version[] = {
 #ifdef COMPILER_VERSION_INTERNAL
 char const info_version_internal[] = {
   'I', 'N', 'F', 'O', ':',
-  'c','o','m','p','i','l','e','r','_','v','e','r','s','i','o','n','_',
-  'i','n','t','e','r','n','a','l','[',
-  COMPILER_VERSION_INTERNAL,']','\0'};
+  'c', 'o', 'm', 'p', 'i', 'l', 'e', 'r',
+  '_', 'v', 'e', 'r', 's', 'i', 'o', 'n', '_',
+  'i', 'n', 't', 'e', 'r', 'n', 'a', 'l', '[',
+  COMPILER_VERSION_INTERNAL,']', '\0'};
 #endif
 
 /* Construct a string literal encoding the version number components. */
