@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion-2019.2.4/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion-2019.2.4/bin/cmake/linux/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr
+CMAKE_SOURCE_DIR = /Users/dmitrij/CLionProjects/lab-03-shared-ptr
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/dmitrij/CLionProjects/lab-03-shared-ptr/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/tests.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/tests.dir/flags.make
 
 CMakeFiles/tests.dir/tests/test.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/tests/test.cpp.o: ../tests/test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests.dir/tests/test.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/tests/test.cpp.o -c /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/tests/test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmitrij/CLionProjects/lab-03-shared-ptr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests.dir/tests/test.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/tests/test.cpp.o -c /Users/dmitrij/CLionProjects/lab-03-shared-ptr/tests/test.cpp
 
 CMakeFiles/tests.dir/tests/test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/tests/test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/tests/test.cpp > CMakeFiles/tests.dir/tests/test.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dmitrij/CLionProjects/lab-03-shared-ptr/tests/test.cpp > CMakeFiles/tests.dir/tests/test.cpp.i
 
 CMakeFiles/tests.dir/tests/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tests/test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/tests/test.cpp -o CMakeFiles/tests.dir/tests/test.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dmitrij/CLionProjects/lab-03-shared-ptr/tests/test.cpp -o CMakeFiles/tests.dir/tests/test.cpp.s
 
 CMakeFiles/tests.dir/sources/SharedPtr.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/sources/SharedPtr.cpp.o: ../sources/SharedPtr.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tests.dir/sources/SharedPtr.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/sources/SharedPtr.cpp.o -c /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/sources/SharedPtr.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dmitrij/CLionProjects/lab-03-shared-ptr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tests.dir/sources/SharedPtr.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tests.dir/sources/SharedPtr.cpp.o -c /Users/dmitrij/CLionProjects/lab-03-shared-ptr/sources/SharedPtr.cpp
 
 CMakeFiles/tests.dir/sources/SharedPtr.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tests.dir/sources/SharedPtr.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/sources/SharedPtr.cpp > CMakeFiles/tests.dir/sources/SharedPtr.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dmitrij/CLionProjects/lab-03-shared-ptr/sources/SharedPtr.cpp > CMakeFiles/tests.dir/sources/SharedPtr.cpp.i
 
 CMakeFiles/tests.dir/sources/SharedPtr.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tests.dir/sources/SharedPtr.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/sources/SharedPtr.cpp -o CMakeFiles/tests.dir/sources/SharedPtr.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dmitrij/CLionProjects/lab-03-shared-ptr/sources/SharedPtr.cpp -o CMakeFiles/tests.dir/sources/SharedPtr.cpp.s
 
 # Object files for target tests
 tests_OBJECTS = \
@@ -95,11 +95,11 @@ tests: CMakeFiles/tests.dir/tests/test.cpp.o
 tests: CMakeFiles/tests.dir/sources/SharedPtr.cpp.o
 tests: CMakeFiles/tests.dir/build.make
 tests: libsharedPtrd.a
-tests: /home/cezar/.hunter/_Base/70287b1/70e2fd0/dffbc08/Install/lib64/libgtestd.a
-tests: /home/cezar/.hunter/_Base/70287b1/70e2fd0/dffbc08/Install/lib64/libgtest_maind.a
-tests: /home/cezar/.hunter/_Base/70287b1/70e2fd0/dffbc08/Install/lib64/libgtestd.a
+tests: /Users/dmitrij/.hunter/_Base/70287b1/7e73122/b499eae/Install/lib/libgtestd.a
+tests: /Users/dmitrij/.hunter/_Base/70287b1/7e73122/b499eae/Install/lib/libgtest_maind.a
+tests: /Users/dmitrij/.hunter/_Base/70287b1/7e73122/b499eae/Install/lib/libgtestd.a
 tests: CMakeFiles/tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dmitrij/CLionProjects/lab-03-shared-ptr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -112,6 +112,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/cmake-build-debug /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/cmake-build-debug /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/cmake-build-debug/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/dmitrij/CLionProjects/lab-03-shared-ptr/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dmitrij/CLionProjects/lab-03-shared-ptr /Users/dmitrij/CLionProjects/lab-03-shared-ptr /Users/dmitrij/CLionProjects/lab-03-shared-ptr/cmake-build-debug /Users/dmitrij/CLionProjects/lab-03-shared-ptr/cmake-build-debug /Users/dmitrij/CLionProjects/lab-03-shared-ptr/cmake-build-debug/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tests.dir/depend
 

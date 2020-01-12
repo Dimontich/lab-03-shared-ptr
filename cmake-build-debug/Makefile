@@ -39,38 +39,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion-2019.2.4/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion-2019.2.4/bin/cmake/linux/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr
+CMAKE_SOURCE_DIR = /Users/dmitrij/CLionProjects/lab-03-shared-ptr
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/dmitrij/CLionProjects/lab-03-shared-ptr/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/opt/clion-2019.2.4/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/opt/clion-2019.2.4/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -81,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/opt/clion-2019.2.4/bin/cmake/linux/bin/ctest --force-new-ctest-process $(ARGS)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest --force-new-ctest-process $(ARGS)
 .PHONY : test
 
 # Special rule for the target test
@@ -89,11 +78,22 @@ test/fast: test
 
 .PHONY : test/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/cmake-build-debug/CMakeFiles /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dmitrij/CLionProjects/lab-03-shared-ptr/cmake-build-debug/CMakeFiles /Users/dmitrij/CLionProjects/lab-03-shared-ptr/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dmitrij/CLionProjects/lab-03-shared-ptr/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,17 +122,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named sharedPtr
+# Target rules for targets named tests
 
 # Build rule for target.
-sharedPtr: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sharedPtr
-.PHONY : sharedPtr
+tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
 
 # fast build rule for target.
-sharedPtr/fast:
-	$(MAKE) -f CMakeFiles/sharedPtr.dir/build.make CMakeFiles/sharedPtr.dir/build
-.PHONY : sharedPtr/fast
+tests/fast:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
 
 #=============================================================================
 # Target rules for targets named SharedPtr
@@ -148,17 +148,17 @@ SharedPtr/fast:
 .PHONY : SharedPtr/fast
 
 #=============================================================================
-# Target rules for targets named tests
+# Target rules for targets named sharedPtr
 
 # Build rule for target.
-tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tests
-.PHONY : tests
+sharedPtr: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sharedPtr
+.PHONY : sharedPtr
 
 # fast build rule for target.
-tests/fast:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-.PHONY : tests/fast
+sharedPtr/fast:
+	$(MAKE) -f CMakeFiles/sharedPtr.dir/build.make CMakeFiles/sharedPtr.dir/build
+.PHONY : sharedPtr/fast
 
 sources/SharedPtr.o: sources/SharedPtr.cpp.o
 
@@ -166,9 +166,9 @@ sources/SharedPtr.o: sources/SharedPtr.cpp.o
 
 # target to build an object file
 sources/SharedPtr.cpp.o:
-	$(MAKE) -f CMakeFiles/sharedPtr.dir/build.make CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.o
-	$(MAKE) -f CMakeFiles/SharedPtr.dir/build.make CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.o
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/sources/SharedPtr.cpp.o
+	$(MAKE) -f CMakeFiles/SharedPtr.dir/build.make CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.o
+	$(MAKE) -f CMakeFiles/sharedPtr.dir/build.make CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.o
 .PHONY : sources/SharedPtr.cpp.o
 
 sources/SharedPtr.i: sources/SharedPtr.cpp.i
@@ -177,9 +177,9 @@ sources/SharedPtr.i: sources/SharedPtr.cpp.i
 
 # target to preprocess a source file
 sources/SharedPtr.cpp.i:
-	$(MAKE) -f CMakeFiles/sharedPtr.dir/build.make CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.i
-	$(MAKE) -f CMakeFiles/SharedPtr.dir/build.make CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.i
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/sources/SharedPtr.cpp.i
+	$(MAKE) -f CMakeFiles/SharedPtr.dir/build.make CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.i
+	$(MAKE) -f CMakeFiles/sharedPtr.dir/build.make CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.i
 .PHONY : sources/SharedPtr.cpp.i
 
 sources/SharedPtr.s: sources/SharedPtr.cpp.s
@@ -188,9 +188,9 @@ sources/SharedPtr.s: sources/SharedPtr.cpp.s
 
 # target to generate assembly for a file
 sources/SharedPtr.cpp.s:
-	$(MAKE) -f CMakeFiles/sharedPtr.dir/build.make CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.s
-	$(MAKE) -f CMakeFiles/SharedPtr.dir/build.make CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.s
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/sources/SharedPtr.cpp.s
+	$(MAKE) -f CMakeFiles/SharedPtr.dir/build.make CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.s
+	$(MAKE) -f CMakeFiles/sharedPtr.dir/build.make CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.s
 .PHONY : sources/SharedPtr.cpp.s
 
 tests/test.o: tests/test.cpp.o
@@ -226,12 +226,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
+	@echo "... tests"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... sharedPtr"
+	@echo "... rebuild_cache"
 	@echo "... SharedPtr"
-	@echo "... tests"
+	@echo "... sharedPtr"
 	@echo "... sources/SharedPtr.o"
 	@echo "... sources/SharedPtr.i"
 	@echo "... sources/SharedPtr.s"
