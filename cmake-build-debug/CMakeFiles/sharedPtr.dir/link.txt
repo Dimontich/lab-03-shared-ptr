@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libsharedPtrd.a  CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libsharedPtrd.a
