@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libSharedPtrd.a"
+  "libsharedPtrd.a"
 )

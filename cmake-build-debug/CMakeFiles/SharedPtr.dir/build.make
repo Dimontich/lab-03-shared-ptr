@@ -49,51 +49,51 @@ CMAKE_SOURCE_DIR = /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr
 CMAKE_BINARY_DIR = /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/cmake-build-debug
 
 # Include any dependencies generated for this target.
-include CMakeFiles/SharedPtr.dir/depend.make
+include CMakeFiles/sharedPtr.dir/depend.make
 
 # Include the progress variables for this target.
-include CMakeFiles/SharedPtr.dir/progress.make
+include CMakeFiles/sharedPtr.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include CMakeFiles/SharedPtr.dir/flags.make
+include CMakeFiles/sharedPtr.dir/flags.make
 
-CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.o: CMakeFiles/SharedPtr.dir/flags.make
-CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.o: ../sources/SharedPtr.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.o -c /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/sources/SharedPtr.cpp
+CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.o: CMakeFiles/sharedPtr.dir/flags.make
+CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.o: ../sources/SharedPtr.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.o -c /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/sources/SharedPtr.cpp
 
-CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/sources/SharedPtr.cpp > CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.i
+CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/sources/SharedPtr.cpp > CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.i
 
-CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/sources/SharedPtr.cpp -o CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.s
+CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/sources/SharedPtr.cpp -o CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.s
 
-# Object files for target SharedPtr
-SharedPtr_OBJECTS = \
-"CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.o"
+# Object files for target sharedPtr
+sharedPtr_OBJECTS = \
+"CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.o"
 
-# External object files for target SharedPtr
-SharedPtr_EXTERNAL_OBJECTS =
+# External object files for target sharedPtr
+sharedPtr_EXTERNAL_OBJECTS =
 
-libSharedPtrd.a: CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.o
-libSharedPtrd.a: CMakeFiles/SharedPtr.dir/build.make
-libSharedPtrd.a: CMakeFiles/SharedPtr.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libSharedPtrd.a"
-	$(CMAKE_COMMAND) -P CMakeFiles/SharedPtr.dir/cmake_clean_target.cmake
-	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SharedPtr.dir/link.txt --verbose=$(VERBOSE)
+libsharedPtrd.a: CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.o
+libsharedPtrd.a: CMakeFiles/sharedPtr.dir/build.make
+libsharedPtrd.a: CMakeFiles/sharedPtr.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libsharedPtrd.a"
+	$(CMAKE_COMMAND) -P CMakeFiles/sharedPtr.dir/cmake_clean_target.cmake
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sharedPtr.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/SharedPtr.dir/build: libSharedPtrd.a
+CMakeFiles/sharedPtr.dir/build: libsharedPtrd.a
 
-.PHONY : CMakeFiles/SharedPtr.dir/build
+.PHONY : CMakeFiles/sharedPtr.dir/build
 
-CMakeFiles/SharedPtr.dir/clean:
-	$(CMAKE_COMMAND) -P CMakeFiles/SharedPtr.dir/cmake_clean.cmake
-.PHONY : CMakeFiles/SharedPtr.dir/clean
+CMakeFiles/sharedPtr.dir/clean:
+	$(CMAKE_COMMAND) -P CMakeFiles/sharedPtr.dir/cmake_clean.cmake
+.PHONY : CMakeFiles/sharedPtr.dir/clean
 
-CMakeFiles/SharedPtr.dir/depend:
-	cd /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/cmake-build-debug /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/cmake-build-debug /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/cmake-build-debug/CMakeFiles/SharedPtr.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : CMakeFiles/SharedPtr.dir/depend
+CMakeFiles/sharedPtr.dir/depend:
+	cd /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/cmake-build-debug /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/cmake-build-debug /home/cezar/CERZAR/workspace/labs/lab-03-shared-ptr/cmake-build-debug/CMakeFiles/sharedPtr.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : CMakeFiles/sharedPtr.dir/depend
 

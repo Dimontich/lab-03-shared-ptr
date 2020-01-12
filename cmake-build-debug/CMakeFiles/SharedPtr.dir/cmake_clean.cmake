@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/SharedPtr.dir/sources/SharedPtr.cpp.o"
-  "libSharedPtrd.a"
-  "libSharedPtrd.pdb"
+  "CMakeFiles/sharedPtr.dir/sources/SharedPtr.cpp.o"
+  "libsharedPtrd.a"
+  "libsharedPtrd.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
 foreach(lang CXX)
-  include(CMakeFiles/SharedPtr.dir/cmake_clean_${lang}.cmake OPTIONAL)
+  include(CMakeFiles/sharedPtr.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()
